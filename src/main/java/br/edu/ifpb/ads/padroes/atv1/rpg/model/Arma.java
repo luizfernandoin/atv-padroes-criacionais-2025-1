@@ -1,4 +1,4 @@
-package br.edu.ifpb.ads.padroes.atv1.rpg;
+package br.edu.ifpb.ads.padroes.atv1.rpg.model;
 
 public class Arma {
 
@@ -10,6 +10,12 @@ public class Arma {
         this.nome = nome;
         this.dano = dano;
         this.tipo = tipo;
+    }
+
+    public Arma(Arma original) {
+        this.nome = original.nome;
+        this.dano = original.dano;
+        this.tipo = original.tipo;
     }
 
     public String getNome() {

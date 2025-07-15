@@ -1,4 +1,4 @@
-package br.edu.ifpb.ads.padroes.atv1.rpg;
+package br.edu.ifpb.ads.padroes.atv1.rpg.model;
 
 public class Armadura {
 
@@ -10,6 +10,12 @@ public class Armadura {
         this.nome = nome;
         this.defesa = defesa;
         this.tipo = tipo;
+    }
+
+    public Armadura(Armadura original) {
+        this.nome = original.nome;
+        this.defesa = original.defesa;
+        this.tipo = original.tipo;
     }
 
     public String getNome() {
